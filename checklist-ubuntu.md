@@ -7,7 +7,8 @@ CONNECTING
     ssh plinktern@172.16.t.10
 - If you get a changed host key warning (this happens after a revert):
     ssh-keygen -R 172.16.t.10
-- Copy the repo from your Windows laptop (PowerShell, in the folder that contains the repo):
+#Next step should be able to be skipped if you are just ripping the repo from github on the box itself.
+Copy the repo from your Windows laptop (PowerShell, in the folder that contains the repo):
     scp -r .\blue-team-kit plinktern@172.16.t.10:~/
 
 CREDENTIALS AND ACCOUNTS
