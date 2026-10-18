@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Pushes /root/backup/* to blackbox (172.16.t.5) over SSH. blackbox is in the competition
 # environment, in scope for us, and out of scope for Red Team.
-# Usage: sudo ./ship-backups.sh            (BB_USER defaults to plinktern; BB_HOST auto-derived)
+# Usage: sudo ./ship-backups.sh         (BB_USER defaults to plinktern; BB_HOST auto-derived)
 set -uo pipefail
 [[ $EUID -eq 0 ]] || { echo "Run as root"; exit 1; }
 BB_USER="${BB_USER:-plinktern}"
-T=$(ip -4 -o addr show | grep -oE '172\.16\.[0-9]+' | head -1 | cut -d. -f3)
+T=26
 BB_HOST="${BB_HOST:-172.16.$T.5}"
 KEY=/root/.ssh/bb_backup
 DEST="backups/$(hostname -s)"
