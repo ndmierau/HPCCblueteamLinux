@@ -115,7 +115,7 @@ GIT AND THE REPO
 - mv gitignore .gitignore && mv gitattributes .gitattributes
     Restores the leading dots on the dotfiles.
 
-YOUR SCRIPTS
+SCRIPTS FOR THE GITHUB FILES 
 - sudo ./install.sh
     Installs the whole tool set.
 - sudo ./sweep.sh
