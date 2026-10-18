@@ -31,17 +31,26 @@ CHECK THE BOX CAN REACH THE INTERNET
 GET THE REPO ONTO THE BOX
 - Plan A, clone from GitHub:
     sudo apt install -y git
+  
     git clone https://github.com/ndmierau/HPCCblueteamLinux.git
+  
     cd HPCCblueteamLinux
 - Plan B, push from laptop with scp (see CONNECTING), then:
+
     cd ~/blue-team-kit
+
 - Check the layout (roles folder, dotfiles, executable bits):
     ls -la . roles
 - If the files are not in a roles folder or the dotfiles lost their dots:
+
     mkdir -p roles
-    mv openwebui.sh web.sh roles/
+
+  mv openwebui.sh web.sh roles/
+
     mv gitignore .gitignore
+
     mv gitattributes .gitattributes
+
 - Make every script executable:
     chmod +x *.sh roles/*.sh
 - Syntax check every script:
