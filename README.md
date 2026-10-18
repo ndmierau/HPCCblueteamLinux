@@ -4,7 +4,8 @@ Scripts for the HPCC4 Linux boxes (Ubuntu 22.04, Fedora Server 38). No secrets, 
     git clone https://github.com/YOURNAME/blue-team-kit.git && cd blue-team-kit
     sudo bash install.sh && sudo bash sweep.sh
 
-See checklist.md for the order of operations.
+See checklist.md files for the order of operations.
+Replace all variables t in ips to out team number. Idk what our team number is yet, hence the placeholder.
 
 git install:
 
