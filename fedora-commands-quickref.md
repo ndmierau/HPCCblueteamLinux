@@ -2,13 +2,13 @@ FEDORA SERVER 38 (IGNITION) - COMMAND QUICK REFERENCE
 Replace t with your team number. Words in CAPITALS are placeholders. Each command has one line saying what it does.
 
 CONNECTING AND SSH TROUBLESHOOTING
-- ssh plinktern@172.16.t.20
+- ssh plinktern@172.16.26.20
     Logs into the ignition box.
-- ssh jmoney@172.16.t.20
+- ssh jmoney@172.16.26.20
     Tests the scored user's login from a second session.
-- ssh-keygen -R 172.16.t.20
+- ssh-keygen -R 172.16.26.20
     Clears a stale host key warning after a revert.
-- scp -r .\blue-team-kit plinktern@172.16.t.20:~/
+- scp -r .\blue-team-kit plinktern@172.16.26.20:~/
     Copies the repo from your Windows laptop to the box.
 - ip -br a
     Shows the box's interface names and IP addresses.
@@ -20,7 +20,7 @@ CONNECTING AND SSH TROUBLESHOOTING
     Tests the SSH config for syntax errors before restarting.
 - sudo ss -tlnp | grep :22
     Confirms SSH is listening on port 22.
-- Test-NetConnection 172.16.t.20 -Port 22
+- Test-NetConnection 172.16.26.20 -Port 22
     Run on your Windows laptop to test whether the port is reachable.
 - tmux
     Starts a session that survives SSH disconnects.
