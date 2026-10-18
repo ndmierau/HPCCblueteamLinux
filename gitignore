@@ -1,0 +1,8 @@
+# never commit competition data or secrets
+sweep-*.txt
+*.tgz
+*.pcap
+backup/
+*.key
+bb_backup*
+.env
